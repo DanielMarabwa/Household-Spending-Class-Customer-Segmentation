@@ -89,9 +89,9 @@ server = 'DESKTOP-M8H3JN9\SQLEXPRESS'
 
 database = 'US_EXPENDITURES'
 
-username = 'username'
+username = 'username' -- You have to use your own username. 
 
-password = 'password'
+password = 'password'  -- You have to use your own password. 
 
 TrustServerCertificate = 'yes'
 

@@ -67,10 +67,15 @@ This notebook implements the Python exploratory data analysis (EDA), optimizatio
 Prerequisites: Requires the following SQL Server configuration:
 
 server = 'DESKTOP-M8H3JN9\SQLEXPRESS'
+
 database = 'US_EXPENDITURES'
+
 username = 'username' -- You have to use your own username. 
+
 password = 'password' -- You have to use your own password. 
+
 TrustServerCertificate = 'yes'
+
 SQL SERVER Authentication
 
 This code displays the stored procedure that is used to drop and re-create all necessary tables for the implementation of this project. 
@@ -81,10 +86,15 @@ This code displays the stored procedure that is used to drop and re-create all n
 Prerequisites: Requires the following SQL Server configuration:
 
 server = 'DESKTOP-M8H3JN9\SQLEXPRESS'
+
 database = 'US_EXPENDITURES'
+
 username = 'username'
+
 password = 'password'
+
 TrustServerCertificate = 'yes'
+
 SQL SERVER Authentication
 
 This code displays the stored procedure that is used to perform data cleaning and generate the final derived table via SQL transformations.

@@ -6,7 +6,7 @@ The purpose of this project is to use U.S. Census Bureau survey data to predict 
 Our company will build a machine learning model that predicts the spending class of a household.The survey, data process, and model will be our product, which we can then license to other companies so they can identify the spending class a household belongs to. Our product will allow other companies to risk-profile their own clients and recommend certain products that suit their spending habits.
 
 ## Data 
-The US Bureau collected household data on spending, income thresholds, and general information about each household. The source data was extracted from three CSV files: "Expenditures.csv", "HOUSEHOLD_MEMBERS.csv", and "HOUSEHOLDS.csv". These three data sources will be integrated into a final derived household dataset, which will be used for the Python EDA and model build. Please see the **Data Description** section for a detailed description of the original data sources.
+The US Bureau collected household data on spending, income thresholds, and general information about each household. The source data was extracted from three CSV files: "Expenditures.csv", "HOUSEHOLD_MEMBERS.csv", and "HOUSEHOLDS.csv". These three data sources will be integrated into a final derived household dataset, which will be used for the Python EDA and model build. Please see the **"Data Description"** section for a detailed description of the original data sources.
 
 ## Client Requirements and Design Constraints
 

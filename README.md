@@ -32,7 +32,7 @@ at the cost of building a poor-performing model.
 
 The code is split into 4 parts 
 
-**Part 1: "Integrated Code"** 
+**Part 1: "Integrated Code - Python and SQL"** 
 
 Prerequisites: Requires the following CSV files: "Expenditures.csv", "HOUSEHOLD_MEMBERS.csv", and "HOUSEHOLDS.csv"
 
@@ -55,7 +55,7 @@ Note: Data checks were implemented in the notebook to confirm the derived table 
 5) Python EDA, Optimization, and Model Build: This notebook implements the exploratory data analysis (EDA), optimization, and model building using Python.
 
 
-**Part 2: "EDA and Model Build"**
+**Part 2: "EDA and Model Build - Python"**
 
 Prerequisites: Requires the following CSV files: "Derived_Household_Features.csv"
 The "Derived_Household_Features.csv" has the same data that was built in the SQL Data Cleaning and Transformations process. 

@@ -6,7 +6,7 @@ The purpose of this project is to use U.S. Census Bureau survey data to predict 
 Our company will build a machine learning model that predicts the spending class of a household. Our company aims to build a similar survey (to the U.S. Bureau survey) that generates the same input features, which will feed into our data pipelines, database**,** and model. The survey, data process, and model will be our product, which we can then license to other companies so they can identify the spending class a household belongs to. Our product will allow other companies to risk-profile their own clients and recommend certain products that suit their spending habits.
 
 ## Data 
-The US Bureau asked collected household data on spending, income thresholds and general information about each household. The source of the data was extracted in 3 csv files: "Expenditures.csv", "HOUSEHOLD_MEMBERS.csv", and "HOUSEHOLDS.csv". The three data sources will be intergrated into a final derived Please section Data Description for a detailed description of the original data sources. 
+The US Bureau collected household data on spending, income thresholds, and general information about each household. The source data was extracted from three CSV files: "Expenditures.csv", "HOUSEHOLD_MEMBERS.csv", and "HOUSEHOLDS.csv". These three data sources will be integrated into a final derived household dataset, which will be used for the Python EDA and model build. Please see the Data Description section for a detailed description of the original data sources.
 
 ## Client Requirements and Design Constraints
 
@@ -22,3 +22,73 @@ average price of the product they bought.
 3) Our clients would ideally like a model that is explainable so they can understand why it 
 makes certain decisions. However, this is not a critical requirement and should not come 
 at the cost of building a poor-performing model.
+
+## High level Summary of Architectural Flow Diagram
+
+<img width="449" height="299" alt="Architectural Diagram _H" src="https://github.com/user-attachments/assets/f61ae30e-673d-44d7-bf2b-42c4aa886c8f" />
+
+
+## Code 
+
+The code is split into 4 parts 
+
+**Part 1: "Integrated Code"** 
+Requires the following CSV files: "Expenditures.csv", "HOUSEHOLD_MEMBERS.csv", and "HOUSEHOLDS.csv"
+
+This code provides the end-to-end implementation of this project, starting from the original CSV files (Households, Household_members, and Expenditures) up to the final model performance values.
+
+Prerequisites: This code can only be executed with the same installation of Jupyter Notebook, SQL Server, and port configuration that was used to run the original notebook. The original notebook was run on Daniel Marabwa's laptop.
+
+This Notebook covers the following stages:
+
+1) ETL (Extract, Transform, Load): Extraction of CSV files and loading of data into SQL tables.
+
+2) SQL Table Creation: This notebook triggers a stored procedure that drops and re-creates all necessary tables.
+
+Note: Data checks were implemented in the notebook to confirm that tables were empty prior to loading data.
+
+3) SQL Data Cleaning and Transformations: This notebook triggers a stored procedure that performs data cleaning and generates the final derived table via SQL transformations.
+
+Note: Data checks were implemented in the notebook to confirm the derived table was empty before triggering the stored procedure for data cleaning and transformation.
+
+4) Data Integration: The final derived table (US_EXPENDITURES.DBO.HOUSEHOLDS_DERIVED_FEATURES) is converted into a Python DataFrame (df).
+
+5) Python EDA, Optimization, and Model Build: This notebook implements the exploratory data analysis (EDA), optimization, and model building using Python.
+
+
+**Part 2: "EDA and Model Build"**
+Requires the following CSV files: "Derived_Household_Features.csv"
+The "Derived_Household_Features.csv" has the same data that was built in the SQL Data Cleaning and Transformations process. 
+
+This notebook implements the Python exploratory data analysis (EDA), optimization, and model building using Python and can be implemented on any python environment. 
+
+**Part 3:"SQL Drop and Create tables Stored Procedure** 
+Requires the following SQL Server configuration:
+
+server = 'DESKTOP-M8H3JN9\SQLEXPRESS'
+database = 'US_EXPENDITURES'
+username = 'username'
+password = 'password'
+TrustServerCertificate = 'yes'
+SQL SERVER Authentication
+
+This code displays the stored procedure that is used to drop and re-create all necessary tables for the implementation of this project. 
+Be careful not to alter the stored procedure or else the code will not run. 
+
+
+**Part 4: "SQL Cleaning and Transformations Stored Procedure"**
+Requires the following SQL Server configuration:
+
+server = 'DESKTOP-M8H3JN9\SQLEXPRESS'
+database = 'US_EXPENDITURES'
+username = 'username'
+password = 'password'
+TrustServerCertificate = 'yes'
+SQL SERVER Authentication
+
+This code displays the stored procedure that is used to perform data cleaning and generate the final derived table via SQL transformations.
+
+
+
+
+

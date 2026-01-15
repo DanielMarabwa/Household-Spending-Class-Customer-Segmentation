@@ -33,11 +33,10 @@ at the cost of building a poor-performing model.
 The code is split into 4 parts 
 
 **Part 1: "Integrated Code"** 
-Requires the following CSV files: "Expenditures.csv", "HOUSEHOLD_MEMBERS.csv", and "HOUSEHOLDS.csv"
+
+Prerequisites: Requires the following CSV files: "Expenditures.csv", "HOUSEHOLD_MEMBERS.csv", and "HOUSEHOLDS.csv"
 
 This code provides the end-to-end implementation of this project, starting from the original CSV files (Households, Household_members, and Expenditures) up to the final model performance values.
-
-Prerequisites: This code can only be executed with the same installation of Jupyter Notebook, SQL Server, and port configuration that was used to run the original notebook. The original notebook was run on Daniel Marabwa's laptop.
 
 This Notebook covers the following stages:
 
@@ -57,27 +56,29 @@ Note: Data checks were implemented in the notebook to confirm the derived table 
 
 
 **Part 2: "EDA and Model Build"**
-Requires the following CSV files: "Derived_Household_Features.csv"
+
+Prerequisites: Requires the following CSV files: "Derived_Household_Features.csv"
 The "Derived_Household_Features.csv" has the same data that was built in the SQL Data Cleaning and Transformations process. 
 
 This notebook implements the Python exploratory data analysis (EDA), optimization, and model building using Python and can be implemented on any python environment. 
 
 **Part 3:"SQL Drop and Create tables Stored Procedure** 
-Requires the following SQL Server configuration:
+
+Prerequisites: Requires the following SQL Server configuration:
 
 server = 'DESKTOP-M8H3JN9\SQLEXPRESS'
 database = 'US_EXPENDITURES'
-username = 'username'
-password = 'password'
+username = 'username' -- You have to use your own username. 
+password = 'password' -- You have to use your own password. 
 TrustServerCertificate = 'yes'
 SQL SERVER Authentication
 
 This code displays the stored procedure that is used to drop and re-create all necessary tables for the implementation of this project. 
-Be careful not to alter the stored procedure or else the code will not run. 
 
 
 **Part 4: "SQL Cleaning and Transformations Stored Procedure"**
-Requires the following SQL Server configuration:
+
+Prerequisites: Requires the following SQL Server configuration:
 
 server = 'DESKTOP-M8H3JN9\SQLEXPRESS'
 database = 'US_EXPENDITURES'

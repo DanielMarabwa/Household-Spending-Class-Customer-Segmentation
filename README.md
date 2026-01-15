@@ -11,11 +11,7 @@ The US Bureau asked collected household data on spending, income thresholds and 
 ## Client Requirements and Design Constraints
 
 1) A key concern raised by our clients (companies using our product) is the potential 
-for customer spending habits to change over time. 
-
- To directly address this crucial concern and ensure the model is reliable for future efforts, 
- we must use a time-based train-test split. The data used to train the model will be on a 
- timeline prior to the data used to test the model’s performance.  
+for customer spending habits to change over time.To directly address this crucial concern and ensure the model is reliable for future efforts, we must use a time-based train-test split. The data used to train the model will be on a timeline prior to the data used to test the model’s performance.  
 
 2) Another design constraint is that although the original US bureau included the amount of 
 money each product cost, it would be impractical to expect individuals (taking the survey) 

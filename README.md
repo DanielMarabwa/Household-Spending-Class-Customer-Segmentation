@@ -62,7 +62,7 @@ The "Derived_Household_Features.csv" has the same data that was built in the SQL
 
 This notebook implements the Python exploratory data analysis (EDA), optimization, and model building using Python and can be implemented on any python environment. 
 
-**Part 3: "SQL Drop and Create tables Stored Procedure** 
+**Part 3: "SQL Drop and Create tables Stored Procedure"** 
 
 Prerequisites: Requires the following SQL Server configuration:
 

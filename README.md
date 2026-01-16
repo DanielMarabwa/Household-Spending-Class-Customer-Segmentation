@@ -66,9 +66,9 @@ This notebook implements the Python exploratory data analysis (EDA), optimizatio
 
 Prerequisites: Requires the following SQL Server configuration:
 
-server = 'DESKTOP-M8H3JN9\SQLEXPRESS'
+server = 'DESKTOP-M8H3JN9\SQLEXPRESS' -- Use your own server
 
-database = 'US_EXPENDITURES'
+database = 'US_EXPENDITURES' -- Use your own database
 
 username = 'username' -- You have to use your own username. 
 
@@ -85,9 +85,9 @@ This code displays the stored procedure that is used to drop and re-create all n
 
 Prerequisites: Requires the following SQL Server configuration:
 
-server = 'DESKTOP-M8H3JN9\SQLEXPRESS'
+server = 'DESKTOP-M8H3JN9\SQLEXPRESS' -- Use your own server
 
-database = 'US_EXPENDITURES'
+database = 'US_EXPENDITURES' -- Use your own database
 
 username = 'username' -- You have to use your own username. 
 

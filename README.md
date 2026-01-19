@@ -27,6 +27,18 @@ at the cost of building a poor-performing model.
 
 <img width="449" height="299" alt="Architectural Diagram _H" src="https://github.com/user-attachments/assets/f61ae30e-673d-44d7-bf2b-42c4aa886c8f" />
 
+In the figure above, we can see the architectural diagram of this project. This shows the flow of data throughout the project. This process can be described in the following steps. 
+
+Extract, Transform, and Load (ETL) into SQL Tables: Extract CSV files, convert them into dataframes, and load them into SQL Server tables. 
+
+Data Transformations, Cleaning, and SQL Exploratory Data Analysis (EDA): Implement EDA and data manipulation on original tables. 
+
+Data Integration: Link the final SQL Table back to a Python dataframe. 
+
+Python EDA and Optimization Techniques: Implement EDA, apply feature reduction methods, perform hyperparameter tuning, and carry out data preprocessing. 
+
+Model Building and Evaluation: Build models and evaluate the performance of each model. 
+
 
 ## Code 
 
